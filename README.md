@@ -1,9 +1,9 @@
 # 10-Class-Resnet-Pytorch
-# Written by Haolin Zhang 
-# T_Resnet for transportation object classification 
-# Update date:2019/10/28
+Written by Haolin Zhang 
+T_Resnet for transportation object classification 
+Update date:2019/10/28
 
-### Environment
+## Environment
 
 pytorch 1.2
 pytorch-gpu 1.2
@@ -14,8 +14,8 @@ python2.7+
 torchvision
 visdom
 
-#install torchnet in conda :https://blog.csdn.net/weixin_43264516/article/details/83187775 
-#please rebuild it in python2.7!
+- install torchnet in conda :https://blog.csdn.net/weixin_43264516/article/details/83187775 
+- please rebuild it in python2.7!
 
 ResNet Pretrained Model Download:
 	ResNet34----BasicBlock    /    ResNet101----Bottleneck----shortcut connection
@@ -52,16 +52,17 @@ train our own dataset in RESNET  (for pedestrian detection project)
 
 ### Dataset 
 
-#partly obtained from 
-From Caltech 101  (http://www.vision.caltech.edu/Image_Datasets/Caltech101/)
-From Caltech 256  (http://www.vision.caltech.edu/Image_Datasets/Caltech256/)
-From Cars Dataset (https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
-From INRIA Person Dataset (http://pascal.inrialpes.fr/data/human/)
+partly obtained from 
+- From Caltech 101 (http://www.vision.caltech.edu/Image_Datasets/Caltech101/)
+- From Caltech 256  (http://www.vision.caltech.edu/Image_Datasets/Caltech256/)
+- From Cars Dataset (https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+- From INRIA Person Dataset (http://pascal.inrialpes.fr/data/human/)
 
-#mainly obtained from
-From PEdesTrian Attribute (PETA) Dataset (http://mmlab.ie.cuhk.edu.hk/projects/PETA.html)
+mainly obtained from
+
+- From PEdesTrian Attribute (PETA) Dataset (http://mmlab.ie.cuhk.edu.hk/projects/PETA.html)
 //// Deng, Yubin, et al. Pedestrian attribute recognition at far distance. Proceedings of the 22nd ACM international conference on Multimedia. ACM, 2014. ////
-From MIO-TCD dataset (http://podoce.dinf.usherbrooke.ca/challenge/dataset/)
+- From MIO-TCD dataset (http://podoce.dinf.usherbrooke.ca/challenge/dataset/)
 //// Z. Luo, F.B.Charron, C.Lemaire, J.Konrad, S.Li, A.Mishra, A. Achkar, J. Eichel, P-M Jodoin MIO-TCD: A new benchmark dataset for vehicle classification and localization in press at IEEE Transactions on Image Processing, 2018 ////
 
 
