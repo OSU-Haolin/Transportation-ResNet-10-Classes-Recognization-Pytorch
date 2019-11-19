@@ -117,7 +117,7 @@ Pytorch_ResNet34(or ResNet101)
   
 **Update(2019/11/19): the test results can be visual by following two functions in `Tester.py`.**
     
-   `test_cm()`-----> plot the image of confusion matrix
+   `test_cm()`-----> plot the image of confusion matrix<br>
    `test_line()`---> plot the lines of the probability of results
 
 
