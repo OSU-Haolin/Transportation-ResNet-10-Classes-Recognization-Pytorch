@@ -27,31 +27,33 @@ ResNet Pretrained Model Download:
 
 ### Run in (just for reference)
 
-Intel i7-6700K
-NVIDIA 2070 Super
+Intel i7-6700K<br>
+NVIDIA 2070 Super<br>
 
 ### Tools
 
 Please see the folder: Tools 
 
-`checkimage.py` -----> Checking if all the images are in 'RGB'.
-`txtdata.py`  -------> Writing the class number with image names into TXT file.
-<font color=red>Update(2019/11/19): We have added following two new tools for your convenience.</font>
-`movedata.py`  ------> Randomly change the part(according to fixed rate) of the whole dataset to Val or Test dataset.
-`Revisename.py` -----> Revising the imge names with specific format in a folder.
+`checkimage.py` -----> Checking if all the images are in 'RGB'.<br>
+`txtdata.py`  -------> Writing the class number with image names into TXT file.<br>
+
+**Update(2019/11/19): We have added following two new tools for your convenience.**
+
+`movedata.py`  ------> Randomly change the part(according to fixed rate) of the whole dataset to Val or Test dataset.<br>
+`Revisename.py` -----> Revising the imge names with specific format in a folder.<br>
 
 Please copy these .py files into the apropriate folder and run in python2.7.
  
 
 ### Notes
 
-`dataset.py` 62line --->   if using JPG RGB ---->  data = Image.open(img_path).convert('RGB')
-if cannot load the keyvalue -----> Reading -----> https://blog.csdn.net/yangwangnndd/article/details/100207686
+`dataset.py` 62line --->   if using JPG RGB ---->  data = Image.open(img_path).convert('RGB')<br>
+if cannot load the keyvalue -----> Reading -----> https://blog.csdn.net/yangwangnndd/article/details/100207686<br>
 
 
 ### Goal
 
-Train our own transporation dataset in ResNet to obtain specific transportation objects classification model.
+Train our own transporation dataset in ResNet to obtain specific transportation objects classification model.<br>
 The model is for further combining with LiDAR Bounding Boxes Tracking.
 
 
@@ -67,23 +69,25 @@ mainly obtained from
 - From PEdesTrian Attribute (PETA) Dataset (http://mmlab.ie.cuhk.edu.hk/projects/PETA.html)
 //// Deng, Yubin, et al. Pedestrian attribute recognition at far distance. Proceedings of the 22nd ACM international conference on Multimedia. ACM, 2014. ////
 
-<font color=red>Update(2019/10/28): We have added a new dataset for our models.</font>
+
+**Update(2019/10/28): We have added a new dataset for our models.**
+
 - From MIO-TCD dataset (http://podoce.dinf.usherbrooke.ca/challenge/dataset/)
 //// Z. Luo, F.B.Charron, C.Lemaire, J.Konrad, S.Li, A.Mishra, A. Achkar, J. Eichel, P-M Jodoin MIO-TCD: A new benchmark dataset for vehicle classification and localization in press at IEEE Transactions on Image Processing, 2018 ////
 
 
 ### Object Classes
 
-0---pedestrian 
-1---car
-2---bus
-3---non-motorized vehicle
-4---motorcycle
-5---bicycle
-6---truck
-7---work van
-8---animal
-9---background
+0---pedestrian<br>
+1---car<br>
+2---bus<br>
+3---non-motorized vehicle<br>
+4---motorcycle<br>
+5---bicycle<br>
+6---truck<br>
+7---work van<br>
+8---animal<br>
+9---background<br>
 
 
 ### Using Steps
@@ -97,20 +101,24 @@ Pytorch_ResNet34(or ResNet101)
   - use`nohup python -m visdom.server &`open`Visdom`net
     or  #important!#  'python -m visdom.server'
     (optional!)
-  - <font color=red>Update(2019/11/19) the loss and acc visual images will be plotted after every echo!<font color=red>
+    
+  - **Update(2019/11/19) the loss and acc visual images will be plotted after every echo!**
+  
   - run`classifier_train.py`
   - save`.pth` in `./models/`
   - note：modify the parameters in `batch_size`
-    - ResNet34，1GPU，`batch_size=120`，<7G  Recommend:20
+    - ResNet34，1GPU，`batch_size=120`，<7G  Recommend:60-100
     - ResNet101，1GPU，`batch_size=60`，<10G Recommend:unkown
 
 - test stp：
   - revise `classifier_test.py`，`ckpt`---path of trained model，`testdata_dir`----path of test images
     note:`ckpt`should be paired with `model`
-  - run `classifier_test.py` get results
-    <font color=red>Update(2019/11/19): the test results can be visual by following two functions in `Tester.py`<font color=red>
-          `test_cm()`-----> plot the image of confusion matrix
-          `test_line()`---> plot the lines of the probability of results.
+  - run `classifier_test.py` get results<br>
+  
+    **Update(2019/11/19): the test results can be visual by following two functions in `Tester.py`**
+    
+          `test_cm()`-----> plot the image of confusion matrix<br>
+          `test_line()`---> plot the lines of the probability of results<br>
 
 
 ### Test code
