@@ -115,10 +115,10 @@ Pytorch_ResNet34(or ResNet101)
     note:`ckpt`should be paired with `model`
   - run `classifier_test.py` get results<br>
   
-    **Update(2019/11/19): the test results can be visual by following two functions in `Tester.py`**
+**Update(2019/11/19): the test results can be visual by following two functions in `Tester.py`.**
     
-          `test_cm()`-----> plot the image of confusion matrix<br>
-          `test_line()`---> plot the lines of the probability of results<br>
+   `test_cm()`-----> plot the image of confusion matrix
+   `test_line()`---> plot the lines of the probability of results
 
 
 ### Test code
