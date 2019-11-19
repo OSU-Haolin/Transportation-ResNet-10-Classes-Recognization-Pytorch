@@ -1,9 +1,9 @@
 # 10-Class-Resnet-Pytorch
-Written by Haolin Zhang 
-T_Resnet for transportation object classification 
-Update date:2019/10/28
+## Written by Haolin Zhang
+## T_ResNet for OSU-CITR Pedestrian Detection Project 
+## Latest Version:2019/11/19
 
-## Environment
+### Environment
 
 pytorch 1.2
 pytorch-gpu 1.2
@@ -25,43 +25,49 @@ ResNet Pretrained Model Download:
 ![ResNet34 and ResNet101](./pic/ResNet34_ResNet101.jpg)
 
 
-## Run in (for reference)
+### Run in (just for reference)
 
 Intel i7-6700K
 NVIDIA 2070 Super
 
 ### Tools
 
-folder TOOLS 
-checkimage.py ----->check if all the images are in 'RGB' shape.
-txtdata.py  -------> write the class with image names into TXT.
+Please see the folder: Tools 
 
-please copy this .py into the data/images/train(val)
+`checkimage.py` -----> Checking if all the images are in 'RGB'.
+`txtdata.py`  -------> Writing the class number with image names into TXT file.
+<font color=red>Update(2019/11/19): We have added following two new tools for your convenience.</font>
+`movedata.py`  ------> Randomly change the part(according to fixed rate) of the whole dataset to Val or Test dataset.
+`Revisename.py` -----> Revising the imge names with specific format in a folder.
+
+Please copy these .py files into the apropriate folder and run in python2.7.
  
 
 ### Notes
 
-dataset.py 62line --->   if using JPG RGB ---->  data = Image.open(img_path).convert('RGB')
+`dataset.py` 62line --->   if using JPG RGB ---->  data = Image.open(img_path).convert('RGB')
 if cannot load the keyvalue -----> Reading -----> https://blog.csdn.net/yangwangnndd/article/details/100207686
 
 
 ### Goal
 
-train our own dataset in RESNET  (for pedestrian detection project)
+Train our own transporation dataset in ResNet to obtain specific transportation objects classification model.
+The model is for further combining with LiDAR Bounding Boxes Tracking.
 
 
 ### Dataset 
 
-partly obtained from 
+Partly obtained from 
 - From Caltech 101 (http://www.vision.caltech.edu/Image_Datasets/Caltech101/)
 - From Caltech 256  (http://www.vision.caltech.edu/Image_Datasets/Caltech256/)
 - From Cars Dataset (https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 - From INRIA Person Dataset (http://pascal.inrialpes.fr/data/human/)
 
 mainly obtained from
-
 - From PEdesTrian Attribute (PETA) Dataset (http://mmlab.ie.cuhk.edu.hk/projects/PETA.html)
 //// Deng, Yubin, et al. Pedestrian attribute recognition at far distance. Proceedings of the 22nd ACM international conference on Multimedia. ACM, 2014. ////
+
+<font color=red>Update(2019/10/28): We have added a new dataset for our models.</font>
 - From MIO-TCD dataset (http://podoce.dinf.usherbrooke.ca/challenge/dataset/)
 //// Z. Luo, F.B.Charron, C.Lemaire, J.Konrad, S.Li, A.Mishra, A. Achkar, J. Eichel, P-M Jodoin MIO-TCD: A new benchmark dataset for vehicle classification and localization in press at IEEE Transactions on Image Processing, 2018 ////
 
@@ -79,6 +85,7 @@ mainly obtained from
 8---animal
 9---background
 
+
 ### Using Steps
 
 Pytorch_ResNet34(or ResNet101)
@@ -89,6 +96,8 @@ Pytorch_ResNet34(or ResNet101)
 - train：
   - use`nohup python -m visdom.server &`open`Visdom`net
     or  #important!#  'python -m visdom.server'
+    (optional!)
+  - <font color=red>Update(2019/11/19) the loss and acc visual images will be plotted after every echo!<font color=red>
   - run`classifier_train.py`
   - save`.pth` in `./models/`
   - note：modify the parameters in `batch_size`
@@ -99,7 +108,9 @@ Pytorch_ResNet34(or ResNet101)
   - revise `classifier_test.py`，`ckpt`---path of trained model，`testdata_dir`----path of test images
     note:`ckpt`should be paired with `model`
   - run `classifier_test.py` get results
-
+    <font color=red>Update(2019/11/19): the test results can be visual by following two functions in `Tester.py`<font color=red>
+          `test_cm()`-----> plot the image of confusion matrix
+          `test_line()`---> plot the lines of the probability of results.
 
 
 ### Test code
@@ -113,12 +124,10 @@ Pytorch_ResNet34(or ResNet101)
 ### Result
 
 - Loss
+![](./pic/Loss.jpg)
 
-![](./pic/loss.png)
-
-- accuracy
-
-![](./pic/accuracy.png)
+- Accuracy
+![](./pic/ACC.jpg)
 
 
 ### Reference
