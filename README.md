@@ -137,13 +137,13 @@ Pytorch_ResNet34(or ResNet101)
 
 ### Result
 
-- Loss
+- Loss<br>
 ![](./Loss.jpg)
 
-- Accuracy
+- Accuracy<br>
 ![](./ACC.jpg)
 
--Experimental result (Confusion Matrix)
+- Experimental result (Confusion Matrix)<br>
 ![](./CM.jpg)
 
 
