@@ -146,6 +146,9 @@ Pytorch_ResNet34(or ResNet101)
 - Experimental result (Confusion Matrix)<br>
 ![](./CM.jpg)
 
+0---pedestrian / 1---car / 2---bus / 3---non-motorized vehicle / 4---motorcycle / <br>
+5---bicycle / 6---truck / 7---work van / 8---animal / 9---background / <br>
+
 - Experimental result (Pro Distribution)<br>
 ![](./prob3.jpg)
 
