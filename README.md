@@ -146,6 +146,11 @@ Pytorch_ResNet34(or ResNet101)
 - Experimental result (Confusion Matrix)<br>
 ![](./CM.jpg)
 
+- Experimental result (Pro Distribution)<br>
+![](./prob3.jpg)
+
+- Experimental result (Pro Distribution)<br>
+![](./prob5.jpg)
 
 ### Reference
 
