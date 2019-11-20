@@ -77,6 +77,10 @@ mainly obtained from
 - From MIO-TCD dataset (http://podoce.dinf.usherbrooke.ca/challenge/dataset/)
 //// Z. Luo, F.B.Charron, C.Lemaire, J.Konrad, S.Li, A.Mishra, A. Achkar, J. Eichel, P-M Jodoin MIO-TCD: A new benchmark dataset for vehicle classification and localization in press at IEEE Transactions on Image Processing, 2018 ////
 
+`Train data`（70% of the whole data set, about 320000 images)
+`Validation data` (15% of the whole data set, about 70000 images)
+`Test data` （15% of the whole data set, about 70000 images)
+
 
 ### Object Classes
 
@@ -134,10 +138,13 @@ Pytorch_ResNet34(or ResNet101)
 ### Result
 
 - Loss
-![](./pic/Loss.jpg)
+![](./Loss.jpg)
 
 - Accuracy
-![](./pic/ACC.jpg)
+![](./ACC.jpg)
+
+-Experimental result (Confusion Matrix)
+![](./CM.jpg)
 
 
 ### Reference
