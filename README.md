@@ -5,16 +5,16 @@
 
 ### Environment
 
-pytorch 1.2<br>
-pytorch-gpu 1.2<br>
-opencv 3+<br>
-torchnet<br>
-numpy<br>
-python2.7+<br>
-torchvision<br>
-visdom<br>
-matplotlib<br>
-scikit-learn<br>
+ pytorch 1.2<br>
+ pytorch-gpu 1.2<br>
+ opencv 3+<br>
+ torchnet<br>
+ numpy<br>
+ python2.7+<br>
+ torchvision<br>
+ visdom<br>
+ matplotlib<br>
+ scikit-learn<br>
 
 - install torchnet in conda :https://blog.csdn.net/weixin_43264516/article/details/83187775 
 - please rebuild it in python2.7!
@@ -29,8 +29,8 @@ ResNet Pretrained Model Download:
 
 ### Run in (just for reference)
 
-Intel i7-6700K<br>
-NVIDIA 2070 Super<br>
+ Intel i7-6700K<br>
+ NVIDIA 2070 Super<br>
 
 ### Tools
 
@@ -129,7 +129,7 @@ Pytorch_ResNet34(or ResNet101)
 
 ### Test code
 
-1. Test parameters
+1. test parameters
 2. models ResNet34 or ResNet101
 3. tester  using Tester
    `_load_ckpt()`   model load
