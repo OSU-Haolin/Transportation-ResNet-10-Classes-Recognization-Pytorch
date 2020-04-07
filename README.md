@@ -1,4 +1,4 @@
-# 10-Class-Resnet-Pytorch
+# 10-Classes-Transportation-Resnet-Pytorch
 ## Written by Haolin Zhang
 ## T_ResNet for OSU-CITR Pedestrian Detection Project 
 ## Latest Version:2019/11/19
