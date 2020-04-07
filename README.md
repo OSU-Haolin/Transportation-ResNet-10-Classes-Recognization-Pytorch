@@ -84,16 +84,16 @@ mainly obtained from
 
 ### Object Classes
 
-0---pedestrian<br>
-1---car<br>
-2---bus<br>
-3---non-motorized vehicle<br>
-4---motorcycle<br>
-5---bicycle<br>
-6---truck<br>
-7---work van<br>
-8---animal<br>
-9---background<br>
+ 0---pedestrian<br>
+ 1---car<br>
+ 2---bus<br>
+ 3---non-motorized vehicle<br>
+ 4---motorcycle<br>
+ 5---bicycle<br>
+ 6---truck<br>
+ 7---work van<br>
+ 8---animal<br>
+ 9---background<br>
 
 
 ### Using Steps
@@ -116,7 +116,7 @@ Pytorch_ResNet34(or ResNet101)
     - ResNet34，1GPU，`batch_size=120`，<7G  Recommend:60-100
     - ResNet101，1GPU，`batch_size=60`，<10G Recommend:unkown
 
-- test stp：
+- test step：
   - revise `classifier_test.py`，`ckpt`---path of trained model，`testdata_dir`----path of test images
     note:`ckpt`should be paired with `model`
   - run `classifier_test.py` get results<br>
@@ -159,4 +159,4 @@ Pytorch_ResNet34(or ResNet101)
 
 - [pytorch](https://github.com/pytorch/pytorch)
 - [pytorch-book](https://github.com/chenyuntc/pytorch-book)
-
+- He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. "Deep residual learning for image recognition." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 770-778. 2016.
