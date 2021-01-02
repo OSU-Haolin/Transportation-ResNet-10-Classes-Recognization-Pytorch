@@ -62,7 +62,7 @@ The model is for further combining with LiDAR Bounding Boxes Tracking.
 
 ### Dataset 
 
-Partly obtained from 
+Partially obtained from 
 - From Caltech 101 (http://www.vision.caltech.edu/Image_Datasets/Caltech101/)
 - From Caltech 256  (http://www.vision.caltech.edu/Image_Datasets/Caltech256/)
 - From Cars Dataset (https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
@@ -72,7 +72,6 @@ mainly obtained from
 - From PEdesTrian Attribute (PETA) Dataset (http://mmlab.ie.cuhk.edu.hk/projects/PETA.html)
 //// Deng, Yubin, et al. Pedestrian attribute recognition at far distance. Proceedings of the 22nd ACM international conference on Multimedia. ACM, 2014. ////
 
-
 **Update(2019/10/28): We have added a new dataset for our models.**
 
 - From MIO-TCD dataset (http://podoce.dinf.usherbrooke.ca/challenge/dataset/)
@@ -81,7 +80,6 @@ mainly obtained from
 `Train data`（70% of the whole data set, about 320000 images)
 `Validation data` (15% of the whole data set, about 70000 images)
 `Test data` （15% of the whole data set, about 70000 images)
-
 
 ### Object Classes
 
@@ -96,10 +94,9 @@ mainly obtained from
  8---animal<br>
  9---background<br>
 
-
 ### Using Steps
 
-Pytorch_ResNet34(or ResNet101)
+Pytorch_ResNet34 (or ResNet101)
 
 - dataset：
   - train：`./data/`
@@ -149,12 +146,6 @@ Pytorch_ResNet34(or ResNet101)
 
 0---pedestrian / 1---car / 2---bus / 3---non-motorized vehicle / 4---motorcycle / <br>
 5---bicycle / 6---truck / 7---work van / 8---animal / 9---background / <br>
-
-- Experimental result (Pro Distribution)<br>
-![](./prob3.jpg)
-
-- Experimental result (Pro Distribution)<br>
-![](./prob5.jpg)
 
 ### Reference
 
