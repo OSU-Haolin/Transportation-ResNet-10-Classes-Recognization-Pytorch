@@ -1,7 +1,7 @@
 # T-Resnet: 10-Classes-Transportation-Resnet-Pytorch
 ## OSU-CITR Pedestrian Detection Project (by Haolin Zhang and Dongfang Yang)
-## Latest Version:2019/11/19
 
+Latest Version:2019/11/19  
 Here is the PDF report [LINK](https://github.com/OSU-Haolin/T_Resnet-10-Classes-Transportation-Resnet-Pytorch/blob/master/Final%20Report%20of%20Individual%20Study_Haolin%20Zhang.pdf)  
 
 ### Environment
